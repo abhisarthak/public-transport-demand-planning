@@ -530,3 +530,129 @@ However:
 - **6.16% of scenarios** enter the **critical risk category**
 
 > **Decision Insight:** Average performance alone can create a false sense of security. The risk classification framework reveals the probability of severe operational degradation and helps planners design contingency capacity for high-impact scenarios.
+
+
+---
+
+## 🎯 Strategic Recommendations & Decision Framework
+
+The integrated forecasting, optimization, disruption, and Monte Carlo analysis provides a structured basis for transportation planning during extreme demand events.
+
+The results suggest that decision-makers should follow a **hierarchical capacity planning strategy** rather than relying on uniform fleet expansion.
+
+### 1️⃣ Prioritize Existing Capacity Utilization
+
+Before investing in additional vehicles, the network should first maximize the utilization of available services.
+
+The modal substitution analysis showed that:
+
+- **2,395 passengers** could be shifted from bus to rail
+- Network coverage improved from **78.20% to 79.54%**
+- The improvement required **no additional operating cost**
+
+This demonstrates that operational coordination can provide immediate resilience benefits.
+
+---
+
+### 2️⃣ Prioritize Critical Corridors
+
+Additional capacity should not be distributed uniformly across the transportation network.
+
+The vulnerability analysis identified the following corridors as the highest priorities:
+
+| Priority | Corridor | Coverage | Unmet Demand |
+|---|---|---:|---:|
+| 🔴 Critical | Howrah → Kolkata | 68.46% | 11,986 |
+| 🟠 High | Midnapore → Uluberia | 70.34% | 10,963 |
+| 🟡 Moderate | Uluberia → Howrah | 80.15% | 7,655 |
+| 🟢 Low | Kharagpur → Midnapore | 99.30% | 260 |
+
+> **Recommendation:** Capacity expansion should be targeted toward the corridors contributing the largest share of network-wide unmet demand.
+
+---
+
+### 3️⃣ Select Capacity Targets Based on Service Requirements
+
+The optimization results provide multiple planning options.
+
+| Planning Target | Additional Buses | Additional Rail Vehicles | Coverage | Unmet Demand |
+|---|---:|---:|---:|---:|
+| Minimum Intervention | 0 | 1 | 80.87% | 28,864 |
+| High Service Level | 26 | 2 | 90.20% | 14,789 |
+| Resilient Planning | 41 | 2 | 95.17% | 7,289 |
+| Full Coverage | 57 | 2 | 100.00% | 0 |
+
+### Recommended Planning Range
+
+The analysis suggests that a **90–95% coverage target** provides a practical balance between:
+
+- Passenger service quality
+- Fleet expansion requirements
+- Operating cost
+- Residual unmet demand
+
+---
+
+### 4️⃣ Protect Rail Operations During Disruptions
+
+The resilience analysis demonstrates that rail disruptions have a significantly greater impact on the transportation network than equivalent bus disruptions.
+
+- **30% bus disruption → 75.56% coverage**
+- **30% rail disruption → 59.66% coverage**
+- **30% combined disruption → 55.68% coverage**
+
+> **Recommendation:** Rail infrastructure and operations should receive priority in contingency planning because rail availability is the dominant driver of network resilience.
+
+---
+
+### 5️⃣ Maintain Contingency Capacity for Extreme Events
+
+The Monte Carlo simulation demonstrates that deterministic planning alone can underestimate operational risk.
+
+Across **5,000 simulated scenarios**:
+
+- Mean coverage fell to **74.14%**
+- **22.72%** of scenarios had coverage below **70%**
+- **41.24%** of scenarios had coverage below **75%**
+- Worst-case coverage fell to **53.59%**
+
+> **Recommendation:** Transportation planners should maintain contingency capacity for low-probability but high-impact demand and disruption events.
+
+---
+
+## 🧠 Decision Framework
+
+The final framework integrates the project into a continuous decision cycle:
+
+```text
+Historical Passenger Data
+          │
+          ▼
+Demand Forecasting (ML)
+          │
+          ▼
+Festival / Extreme Demand Detection
+          │
+          ▼
+Capacity Gap Analysis
+          │
+          ▼
+Corridor Vulnerability Identification
+          │
+          ▼
+Optimization & Modal Substitution
+          │
+          ▼
+Fleet Expansion Decisions
+          │
+          ▼
+Disruption & Resilience Testing
+          │
+          ▼
+Monte Carlo Risk Simulation
+          │
+          ▼
+Risk Classification
+          │
+          ▼
+Strategic Transportation Decision
