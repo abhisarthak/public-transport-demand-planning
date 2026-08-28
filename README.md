@@ -218,3 +218,55 @@ The analysis identifies **Howrah → Kolkata** as the most vulnerable corridor.
 This demonstrates why uniform fleet expansion is inefficient. Additional transportation capacity should instead be **targeted toward the corridors experiencing the highest passenger shortages**.
 
 > **Decision Insight:** Corridor-level analysis converts a network-wide capacity shortage into a prioritized intervention strategy, identifying where additional buses and rail capacity can generate the greatest service improvement.
+
+
+---
+
+## ⚙️ Fleet Expansion Optimization
+
+The optimization framework determines the additional transportation resources required to achieve different passenger service coverage targets during the festival demand surge.
+
+The model jointly considers:
+
+- Bus fleet expansion
+- Rail fleet expansion
+- Service capacity constraints
+- Passenger demand
+- Modal substitution
+- Unmet demand
+- Operating cost
+
+### Capacity Expansion Scenarios
+
+| Target Coverage | Additional Buses | Additional Rail Vehicles | Final Bus Fleet | Final Rail Fleet | Achieved Coverage | Unmet Demand | Operating Cost |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **80%** | 0 | 1 | 40 | 51 | **80.87%** | 28,864 | 1,216 |
+| **90%** | 26 | 2 | 66 | 52 | **90.20%** | 14,789 | 1,492 |
+| **95%** | 41 | 2 | 81 | 52 | **95.17%** | 7,289 | 1,642 |
+| **100%** | 57 | 2 | 97 | 52 | **100.00%** | 0 | 1,788 |
+
+### Cost–Service Trade-off
+
+Increasing service coverage requires additional transportation resources and operating expenditure.
+
+From the **80% baseline scenario**:
+
+- Achieving **90% coverage** recovers an additional **14,075 passengers**
+- Achieving **95% coverage** recovers an additional **21,575 passengers**
+- Achieving **100% coverage** eliminates all **28,864 unmet passengers**
+
+The marginal cost of recovering additional passenger demand remains approximately:
+
+- **19.61 cost units per 1,000 passengers recovered** for 90% coverage
+- **19.75 cost units per 1,000 passengers recovered** for 95% coverage
+- **19.82 cost units per 1,000 passengers recovered** for 100% coverage
+
+### Key Optimization Insight
+
+The results demonstrate that capacity planning should not be treated as a simple objective of maximizing fleet size.
+
+Instead, the framework allows decision-makers to select an appropriate balance between:
+
+**Passenger service level ↔ Additional fleet investment ↔ Operating cost**
+
+> **Decision Insight:** A 90–95% service coverage target provides a strong planning range, substantially reducing unmet passenger demand while avoiding the maximum fleet expansion required for full 100% coverage.
