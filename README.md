@@ -656,3 +656,104 @@ Risk Classification
           │
           ▼
 Strategic Transportation Decision
+```
+---
+
+## 📊 Visualizations & Decision Dashboard
+
+The project includes an interactive visual analytics layer to help decision-makers quickly understand demand patterns, capacity shortages, optimization outcomes, and network resilience.
+
+The dashboard consolidates results from the forecasting, optimization, and risk analysis pipeline into actionable visual insights.
+
+### 📈 Demand Forecasting Performance
+
+The forecasting visualizations compare:
+
+- Actual passenger demand
+- Machine learning predictions
+- Forecast errors
+- Festival and extreme-demand spikes
+- Route-level demand patterns
+
+![Demand Forecasting](images/demand_forecasting.png)
+
+---
+
+### 🚍 Festival Demand & Capacity Gap
+
+The capacity analysis highlights the gap between forecasted passenger demand and available multimodal transportation capacity.
+
+Key indicators include:
+
+- Total festival demand
+- Available network capacity
+- Unmet passenger demand
+- Network service coverage
+
+![Festival Capacity Gap](images/festival_capacity.png)
+
+---
+
+### ⚠️ Corridor Vulnerability Analysis
+
+The corridor-level analysis identifies where passenger shortages are concentrated across the transportation network.
+
+![Corridor Vulnerability](images/corridor_vulnerability.png)
+
+This visualization helps decision-makers prioritize capacity expansion toward corridors experiencing the highest unmet demand.
+
+---
+
+### ⚙️ Fleet Expansion Scenarios
+
+The optimization dashboard compares alternative fleet expansion strategies and their impact on:
+
+- Passenger coverage
+- Unmet demand
+- Additional buses and rail capacity
+- Operating cost
+
+![Fleet Expansion](images/fleet_expansion.png)
+
+---
+
+### 🔄 Modal Substitution Analysis
+
+The modal substitution analysis evaluates how passenger redistribution between bus and rail services can improve network utilization.
+
+![Modal Substitution](images/modal_substitution.png)
+
+---
+
+### 🛡️ Network Resilience Analysis
+
+The resilience analysis evaluates how network coverage changes when bus and rail services experience disruptions.
+
+![Network Resilience](images/network_resilience.png)
+
+---
+
+### 🎲 Monte Carlo Risk Analysis
+
+The uncertainty simulation visualizes the distribution of network performance across **5,000 simulated scenarios**.
+
+The analysis captures:
+
+- Demand uncertainty
+- Bus disruptions
+- Rail disruptions
+- Coverage distribution
+- Unmet demand risk
+- Extreme operational scenarios
+
+![Monte Carlo Simulation](images/monte_carlo.png)
+
+---
+
+### 📉 Risk Classification
+
+Simulation outcomes are classified into operational risk categories ranging from stable to critical conditions.
+
+![Risk Classification](images/risk_classification.png)
+
+> **Dashboard Insight:** The visual analytics layer enables decision-makers to move quickly from raw transportation data to forecasting insights, optimized capacity decisions, resilience assessment, and risk-aware planning.
