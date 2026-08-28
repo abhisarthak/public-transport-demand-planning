@@ -50,21 +50,18 @@ Monte Carlo Risk Analysis
       ▼
 Management Recommendation
 ```
+
 ## 🚀 Key Features
 
-- **Demand Forecasting:** Uses a Random Forest model to forecast multimodal passenger demand and achieves an **R² of 0.935**, substantially outperforming the naïve baseline.
-
-- **Festival Surge Analysis:** Evaluates transportation capacity under peak festival demand of **150,864 passengers**, identifying a baseline service coverage of **79.54%**.
-
-- **Optimization-Based Fleet Planning:** Determines the additional bus and rail capacity required to achieve different service targets, from **80% to 100% coverage**.
-
-- **Corridor Vulnerability Analysis:** Identifies critical network segments based on unmet demand, coverage levels, and contribution to total network vulnerability.
-
-- **Resilience Stress Testing:** Evaluates the impact of simultaneous **bus and rail disruptions** using a resilience coverage matrix.
-
-- **Monte Carlo Risk Simulation:** Performs **5,000 simulations** to quantify uncertainty, showing a mean coverage of **74.14%** and a **22.72% probability of coverage falling below 70%**.
-
-- **Decision Intelligence Dashboard:** Integrates forecasting, optimization, scenario analysis, resilience assessment, and management recommendations into an interactive dashboard.
+- **Machine Learning Demand Forecasting** — Predicts multimodal passenger demand using a Random Forest model.
+- **Festival Surge Planning** — Estimates peak-demand conditions and identifies capacity shortages.
+- **Optimization-Based Capacity Allocation** — Allocates bus and rail services under fleet constraints.
+- **Fleet Expansion Planning** — Determines additional resources required for different service coverage targets.
+- **Modal Substitution** — Evaluates shifting passengers from constrained modes to available capacity.
+- **Corridor Vulnerability Analysis** — Identifies network segments contributing most to unmet demand.
+- **Disruption Stress Testing** — Tests network performance under bus and rail capacity disruptions.
+- **Monte Carlo Risk Simulation** — Quantifies uncertainty and extreme operational risk across thousands of scenarios.
+- **Interactive Decision Support** — Consolidates analytical results into a decision-oriented dashboard.
 
 
 ---
