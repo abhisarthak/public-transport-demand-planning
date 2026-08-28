@@ -468,3 +468,65 @@ In the worst simulated scenario:
 - Available capacity drops to **84,000 passengers**
 
 > **Risk Insight:** Planning based only on average demand and deterministic capacity can underestimate operational risk. The Monte Carlo framework quantifies the probability of poor network performance and helps decision-makers prepare for low-probability, high-impact disruption scenarios.
+
+---
+
+## 📉 Resilience Score & Risk Classification
+
+Beyond measuring unmet demand and service coverage, the framework converts simulation outcomes into interpretable **resilience and risk indicators**.
+
+This allows decision-makers to understand not only the expected network performance, but also the severity and frequency of performance deterioration under uncertainty.
+
+### Resilience Loss Analysis
+
+Resilience loss measures the reduction in network performance relative to the baseline operating condition.
+
+| Metric | Result |
+|---|---:|
+| **Mean Resilience Loss** | **5.40 percentage points** |
+| **Median Resilience Loss** | **2.87 percentage points** |
+| **95th Percentile Loss** | **20.12 percentage points** |
+| **Maximum Resilience Loss** | **25.95 percentage points** |
+
+The difference between the median and the 95th percentile resilience loss highlights an important risk characteristic:
+
+> Most scenarios experience relatively moderate performance degradation, but a smaller number of disruption scenarios can produce severe service deterioration.
+
+---
+
+### Resilience Score
+
+The simulation outcomes were further converted into a resilience score representing the ability of the transportation network to maintain performance under uncertain demand and disruption conditions.
+
+| Metric | Resilience Score |
+|---|---:|
+| **Mean Score** | **93.22** |
+| **5th Percentile Score** | **74.70** |
+| **Minimum Score** | **67.37** |
+
+While the average resilience score remains high, the lower-tail results indicate that severe disruption combinations can substantially reduce network performance.
+
+---
+
+### Risk Classification
+
+The **5,000 Monte Carlo simulations** were classified into four operational risk categories.
+
+| Risk Category | Simulations | Percentage |
+|---|---:|---:|
+| 🟢 **Stable** | 2,938 | **58.76%** |
+| 🟡 **Moderate Risk** | 926 | **18.52%** |
+| 🟠 **High Risk** | 828 | **16.56%** |
+| 🔴 **Critical** | 308 | **6.16%** |
+
+### Key Insight
+
+The network operates under stable conditions in approximately **59% of simulated scenarios**.
+
+However:
+
+- **41.24% of scenarios** experience some level of elevated operational risk
+- **22.72% of simulations** fall below **70% service coverage**
+- **6.16% of scenarios** enter the **critical risk category**
+
+> **Decision Insight:** Average performance alone can create a false sense of security. The risk classification framework reveals the probability of severe operational degradation and helps planners design contingency capacity for high-impact scenarios.
