@@ -946,3 +946,50 @@ The integrated forecasting, optimization, and resilience framework produced the 
 - **Worst simulated unmet demand:** **72,761 passengers**
 
 > **Overall Outcome:** The project demonstrates how machine learning, optimization, modal substitution, disruption modelling, and Monte Carlo simulation can be integrated into a single Decision Intelligence framework for proactive public transportation planning.
+
+
+---
+
+## 🔮 Future Improvements
+
+The current project demonstrates an end-to-end Decision Intelligence framework for transportation demand forecasting, capacity optimization, and resilience analysis. The following extensions could further improve its real-world applicability:
+
+### 🌐 Real-Time Data Integration
+
+- Integrate live passenger demand and ticketing data
+- Incorporate GPS and vehicle tracking information
+- Include real-time traffic and railway operational conditions
+- Continuously update demand forecasts
+
+### 🤖 Advanced Forecasting Models
+
+- Compare Random Forest with XGBoost and LightGBM
+- Explore deep learning models such as LSTM for time-series forecasting
+- Develop probabilistic demand forecasts instead of point forecasts
+- Incorporate weather, special events, and external disruption indicators
+
+### ⚙️ Advanced Optimization
+
+- Develop a multi-objective optimization model balancing:
+  - Passenger coverage
+  - Operating cost
+  - Service equity
+  - Environmental impact
+- Introduce dynamic vehicle scheduling and route reassignment
+- Consider fleet availability and operational constraints in real time
+
+### 🛡️ Enhanced Resilience Modelling
+
+- Model cascading disruptions across multiple corridors
+- Include vehicle failures and infrastructure disruptions
+- Develop disruption recovery strategies
+- Evaluate recovery time and resilience restoration
+
+### 🧠 Decision Support Dashboard
+
+- Build an interactive Streamlit or Power BI dashboard
+- Enable scenario-based decision making
+- Provide real-time capacity alerts
+- Allow decision-makers to test fleet expansion and disruption scenarios interactively
+
+> **Future Vision:** The framework can evolve into a real-time transportation Decision Support System that continuously forecasts demand, identifies capacity shortages, recommends optimal service allocations, and evaluates network resilience under uncertainty.
