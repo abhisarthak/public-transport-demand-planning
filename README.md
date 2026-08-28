@@ -314,3 +314,81 @@ The largest passenger shifts occurred on:
 However, the results also show an important limitation:
 
 > **Modal substitution alone cannot solve a structural capacity shortage. Once available spare capacity is exhausted, additional fleet expansion becomes necessary.**
+
+
+---
+
+## 🛡️ Network Resilience & Disruption Analysis
+
+Transportation networks must continue operating even when part of the fleet becomes unavailable.
+
+The framework evaluates network performance under multiple **bus and rail disruption scenarios**, ranging from **0% to 30% service disruption**.
+
+### Disruption Scenarios Evaluated
+
+The model simulates:
+
+- Bus fleet disruptions
+- Rail fleet disruptions
+- Combined bus and rail disruptions
+- Capacity reduction under each scenario
+- Passenger modal substitution
+- Resulting unmet demand and network coverage
+
+### Baseline Network Performance
+
+Under normal festival operations:
+
+| Metric | Value |
+|---|---:|
+| Bus Services Available | 400 |
+| Rail Services Available | 100 |
+| Total Network Capacity | 120,000 |
+| Unmet Demand | 30,864 |
+| Network Coverage | **79.54%** |
+
+---
+
+### Impact of Bus Disruptions
+
+| Bus Disruption | Capacity | Unmet Demand | Coverage |
+|---|---:|---:|---:|
+| 0% | 120,000 | 30,864 | **79.54%** |
+| 10% | 118,000 | 32,864 | 78.22% |
+| 20% | 116,000 | 34,864 | 76.89% |
+| 30% | 114,000 | 36,864 | **75.56%** |
+
+Even with a **30% bus disruption**, the network retains relatively higher coverage because rail continues to provide substantial passenger capacity.
+
+---
+
+### Impact of Rail Disruptions
+
+| Rail Disruption | Capacity | Unmet Demand | Coverage |
+|---|---:|---:|---:|
+| 0% | 120,000 | 30,864 | **79.54%** |
+| 10% | 110,000 | 40,864 | 72.91% |
+| 20% | 100,000 | 50,864 | 66.28% |
+| 30% | 90,000 | 60,864 | **59.66%** |
+
+Rail disruptions have a significantly larger impact on network performance because rail services carry substantially higher passenger capacity per service.
+
+---
+
+### Combined Disruption Resilience Matrix
+
+| Bus Disruption ↓ / Rail Disruption → | 0% | 10% | 20% | 30% |
+|---|---:|---:|---:|---:|
+| **0%** | 79.54% | 72.91% | 66.28% | 59.66% |
+| **10%** | 78.22% | 71.59% | 64.96% | 58.33% |
+| **20%** | 76.89% | 70.26% | 63.63% | 57.00% |
+| **30%** | 75.56% | 68.94% | 62.31% | **55.68%** |
+
+### Key Findings
+
+- A **30% bus disruption** reduces coverage by approximately **4 percentage points**
+- A **30% rail disruption** reduces coverage by nearly **20 percentage points**
+- The worst-case combined disruption reduces coverage to only **55.68%**
+- Rail availability is therefore identified as the **dominant resilience factor** in the multimodal network
+
+> **Resilience Insight:** The network is considerably more sensitive to rail disruptions than bus disruptions. This suggests that protecting rail operations and maintaining contingency rail capacity should be a strategic priority during extreme demand events.
