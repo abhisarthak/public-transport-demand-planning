@@ -993,3 +993,28 @@ The current project demonstrates an end-to-end Decision Intelligence framework f
 - Allow decision-makers to test fleet expansion and disruption scenarios interactively
 
 > **Future Vision:** The framework can evolve into a real-time transportation Decision Support System that continuously forecasts demand, identifies capacity shortages, recommends optimal service allocations, and evaluates network resilience under uncertainty.
+
+---
+
+## 👤 Author
+
+**Abhishek Kumar**
+
+M.Tech — Operations Research & Data Analytics  
+IIT Kharagpur
+
+### Areas of Interest
+
+- Decision Intelligence
+- Data Science & Machine Learning
+- Operations Research & Optimization
+- Business & Operations Analytics
+- Transportation and Logistics Analytics
+
+---
+
+## ⭐ If You Found This Project Useful
+
+If you found this project interesting or useful, consider giving the repository a ⭐.
+
+Feedback, suggestions, and collaboration opportunities are always welcome.
