@@ -835,4 +835,65 @@ Public-Transport-Demand-Forecasting-and-Optimization/
 ├── README.md
 └── requirements.txt
 ```
+---
+
+## 🚀 How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repository-name.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd your-repository-name
+```
+
+### 3. Install Required Libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Analysis
+
+Open the Jupyter Notebook in VS Code or Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then run the notebook containing the complete analytical pipeline.
+
+### Analytical Workflow
+
+The project follows the following execution pipeline:
+
+```text
+Data Preparation
+       ↓
+Exploratory Data Analysis
+       ↓
+Feature Engineering
+       ↓
+Demand Forecasting
+       ↓
+Festival Demand Analysis
+       ↓
+Multimodal Capacity Optimization
+       ↓
+Modal Substitution
+       ↓
+Fleet Expansion Analysis
+       ↓
+Disruption & Resilience Testing
+       ↓
+Monte Carlo Risk Simulation
+       ↓
+Strategic Decision Recommendations
+```
+
+> **Note:** Run the notebook sequentially from top to bottom to reproduce the complete forecasting, optimization, and simulation results.
 
