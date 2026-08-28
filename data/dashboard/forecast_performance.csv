@@ -1,0 +1,3 @@
+model,MAE,RMSE,R2,MAE_improvement_pct,RMSE_improvement_pct
+Naive Baseline,1942.23,3412.45,0.2625,0.0,0.0
+Random Forest,771.931795,1012.905817,0.935021,60.255387,70.317343

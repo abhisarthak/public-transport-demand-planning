@@ -1,0 +1,5 @@
+target_coverage_pct,additional_buses,additional_rail,final_bus_fleet,final_rail_fleet,achieved_coverage_pct,unmet_demand,operating_cost,unmet_reduction_vs_80_pct,additional_cost_vs_80_pct,cost_per_1000_passengers_recovered
+80,0,1,40,51,80.87,28864,1216,0,0,
+90,26,2,66,52,90.2,14789,1492,14075,276,19.609236234458262
+95,41,2,81,52,95.17,7289,1642,21575,426,19.745075318655854
+100,57,2,97,52,100.0,0,1788,28864,572,19.817073170731707

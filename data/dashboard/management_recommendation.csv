@@ -1,0 +1,7 @@
+scenario,action,expected_coverage,unmet_demand,operating_cost,priority
+Normal / Current Fleet,Operate current fleet,79.54%,30864,1200,Baseline
+Festival – Minimum Service,Add 1 rail capacity,80.87%,28864,1216,Minimum
+Festival – Recommended,Add 26 buses + 2 rail,90.20%,14789,1492,Recommended
+Festival – High Service,Add 41 buses + 2 rail,95.17%,7289,1642,High reliability
+Festival – Full Coverage,Add 57 buses + 2 rail,100.00%,0,1788,Maximum service
+Severe Disruption,Activate contingency capacity,Scenario dependent,"Up to 72,761 in simulation",Scenario dependent,Emergency

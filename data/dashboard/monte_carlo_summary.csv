@@ -1,0 +1,13 @@
+metric,value
+Simulations,5000.0
+Mean Forecast Demand,150835.53
+Mean Coverage,74.14
+Median Coverage,76.68
+5th Percentile Coverage,59.42
+10th Percentile Coverage,63.59
+95th Percentile Unmet Demand,61257.75
+Probability Coverage <70%,22.72
+Probability Coverage <75%,41.24
+Probability Unmet Demand >30000,83.42
+Worst Coverage,53.59
+Worst Unmet Demand,72761.0
