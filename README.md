@@ -897,3 +897,52 @@ Strategic Decision Recommendations
 
 > **Note:** Run the notebook sequentially from top to bottom to reproduce the complete forecasting, optimization, and simulation results.
 
+---
+
+## 📌 Key Results
+
+The integrated forecasting, optimization, and resilience framework produced the following key results:
+
+### 🤖 Forecasting Performance
+
+- **Random Forest R²:** **0.935**
+- **60.26% reduction in MAE** compared with the naïve baseline
+- Demand forecasting used as the input for downstream capacity planning
+
+### 🚍 Festival Demand & Capacity
+
+- **Forecast festival demand:** **150,864 passengers**
+- **Current multimodal capacity:** **120,000 passengers**
+- **Baseline coverage:** **79.54%**
+- **Baseline unmet demand:** **30,864 passengers**
+
+### ⚙️ Fleet Expansion Optimization
+
+- **90% coverage:** Achieved with **26 additional buses + 2 rail vehicles**
+- **95% coverage:** Achieved with **41 additional buses + 2 rail vehicles**
+- **100% coverage:** Achieved with **57 additional buses + 2 rail vehicles**
+- Full coverage reduced unmet demand from **28,864 to 0 passengers**
+
+### 🔄 Modal Substitution
+
+- **2,395 passengers** successfully shifted from bus to rail
+- Network coverage improved from **78.20% to 79.54%**
+- Improvement achieved with **no additional operating cost**
+
+### 🛡️ Network Resilience
+
+- **30% bus disruption:** Coverage reduced to **75.56%**
+- **30% rail disruption:** Coverage reduced to **59.66%**
+- **Worst combined disruption:** Coverage reduced to **55.68%**
+- Rail availability identified as the **dominant resilience factor**
+
+### 🎲 Monte Carlo Risk Analysis
+
+- **5,000 uncertainty simulations**
+- **Mean network coverage:** **74.14%**
+- **5th percentile coverage:** **59.42%**
+- **Probability of coverage below 70%:** **22.72%**
+- **Worst simulated coverage:** **53.59%**
+- **Worst simulated unmet demand:** **72,761 passengers**
+
+> **Overall Outcome:** The project demonstrates how machine learning, optimization, modal substitution, disruption modelling, and Monte Carlo simulation can be integrated into a single Decision Intelligence framework for proactive public transportation planning.
