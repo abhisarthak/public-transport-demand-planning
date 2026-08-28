@@ -102,5 +102,44 @@ Capacity Analysis    Corridor Analysis
                 ▼
      Management Decision Recommendation
 ```
+---
 
+## 📊 Dataset & Scenario Design
+
+This project models multimodal passenger transportation across four interconnected corridors:
+
+- **Howrah → Kolkata**
+- **Kharagpur → Midnapore**
+- **Midnapore → Uluberia**
+- **Uluberia → Howrah**
+
+The analysis integrates passenger demand, available bus capacity, rail capacity, festival demand surges, and transportation disruption scenarios.
+
+### Core Variables
+
+| Variable | Description |
+|---|---|
+| `passenger_demand` | Estimated passenger demand for a corridor |
+| `festival_demand` | Increased demand during festival periods |
+| `bus_capacity` | Passenger capacity provided by bus services |
+| `rail_capacity` | Passenger capacity provided by rail services |
+| `total_capacity` | Combined multimodal transportation capacity |
+| `unmet_demand` | Passengers unable to be served |
+| `coverage_pct` | Percentage of total demand successfully served |
+| `bus_disruption` | Reduction in available bus capacity |
+| `rail_disruption` | Reduction in available rail capacity |
+
+### Scenario Framework
+
+The system evaluates transportation decisions under multiple operating conditions:
+
+| Scenario | Description |
+|---|---|
+| **Normal Operations** | Current fleet operating under baseline demand |
+| **Festival Surge** | Increased passenger demand during high-demand periods |
+| **Capacity Expansion** | Additional buses and rail capacity introduced |
+| **Network Disruption** | Bus and rail capacity reduced by disruption scenarios |
+| **Monte Carlo Simulation** | Thousands of uncertain demand and disruption scenarios |
+
+> **Note:** The project uses a scenario-based transportation dataset designed to evaluate the complete Decision Intelligence pipeline, including forecasting, optimization, resilience testing, and risk analysis.
 
