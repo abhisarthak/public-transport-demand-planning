@@ -65,3 +65,42 @@ Management Recommendation
 - **Monte Carlo Risk Simulation:** Performs **5,000 simulations** to quantify uncertainty, showing a mean coverage of **74.14%** and a **22.72% probability of coverage falling below 70%**.
 
 - **Decision Intelligence Dashboard:** Integrates forecasting, optimization, scenario analysis, resilience assessment, and management recommendations into an interactive dashboard.
+
+
+---
+
+## 🏗️ System Architecture
+
+The project is designed as an integrated **Decision Intelligence framework** where predictive analytics, optimization, simulation, and risk analysis work together to support transportation planning decisions.
+
+```text
+Historical / Synthetic Passenger Data
+                │
+                ▼
+        Data Processing & EDA
+                │
+                ▼
+      Demand Forecasting (ML)
+                │
+                ▼
+    Festival Demand Estimation
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+Capacity Analysis    Corridor Analysis
+        │                │
+        └───────┬────────┘
+                ▼
+      Fleet Expansion Optimization
+                │
+                ▼
+    Network Disruption Stress Testing
+                │
+                ▼
+       Monte Carlo Risk Simulation
+                │
+                ▼
+     Management Decision Recommendation
+```
+
+
