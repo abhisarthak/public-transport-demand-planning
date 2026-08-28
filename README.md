@@ -803,3 +803,36 @@ Simulation outcomes are classified into operational risk categories ranging from
 - Modal substitution analysis
 - Network resilience assessment
 - Strategic capacity recommendations
+
+---
+
+## 📁 Project Structure
+
+```text
+Public-Transport-Demand-Forecasting-and-Optimization/
+│
+├── data/
+│   └── raw_data.csv
+│
+├── notebooks/
+│   └── transport_demand_analysis.ipynb
+│
+├── images/
+│   ├── demand_forecasting.png
+│   ├── festival_capacity.png
+│   ├── corridor_vulnerability.png
+│   ├── fleet_expansion.png
+│   ├── modal_substitution.png
+│   ├── network_resilience.png
+│   ├── monte_carlo.png
+│   └── risk_classification.png
+│
+├── outputs/
+│   ├── optimization_results.csv
+│   ├── scenario_results.csv
+│   └── monte_carlo_results.csv
+│
+├── README.md
+└── requirements.txt
+```
+
