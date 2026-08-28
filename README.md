@@ -757,3 +757,49 @@ Simulation outcomes are classified into operational risk categories ranging from
 ![Risk Classification](images/risk_classification.png)
 
 > **Dashboard Insight:** The visual analytics layer enables decision-makers to move quickly from raw transportation data to forecasting insights, optimized capacity decisions, resilience assessment, and risk-aware planning.
+
+
+---
+
+## 🛠️ Technology Stack
+
+| Category | Technologies |
+|---|---|
+| **Programming** | Python |
+| **Data Processing** | Pandas, NumPy |
+| **Machine Learning** | Scikit-learn |
+| **Forecasting Model** | Random Forest Regressor |
+| **Optimization** | PuLP |
+| **Simulation** | Monte Carlo Simulation |
+| **Data Visualization** | Matplotlib, Seaborn |
+| **Development Environment** | Jupyter Notebook, VS Code |
+| **Version Control** | Git & GitHub |
+
+### Core Analytical Components
+
+🤖 **Machine Learning**
+- Random Forest demand forecasting
+- Baseline model comparison
+- Forecast error analysis
+- Festival and weekend demand effects
+
+⚙️ **Operations Research & Optimization**
+- Multimodal capacity allocation
+- Bus and rail service optimization
+- Fleet expansion planning
+- Coverage target optimization
+- Cost–service trade-off analysis
+
+🎲 **Simulation & Risk Analysis**
+- 5,000-run Monte Carlo simulation
+- Demand uncertainty modelling
+- Bus and rail disruption scenarios
+- Resilience loss analysis
+- Risk classification
+
+📊 **Decision Analytics**
+- Corridor vulnerability analysis
+- Capacity gap identification
+- Modal substitution analysis
+- Network resilience assessment
+- Strategic capacity recommendations
