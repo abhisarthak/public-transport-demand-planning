@@ -270,3 +270,47 @@ Instead, the framework allows decision-makers to select an appropriate balance b
 **Passenger service level ↔ Additional fleet investment ↔ Operating cost**
 
 > **Decision Insight:** A 90–95% service coverage target provides a strong planning range, substantially reducing unmet passenger demand while avoiding the maximum fleet expansion required for full 100% coverage.
+
+---
+
+## 🔄 Modal Substitution Analysis
+
+During extreme demand conditions, passengers may be shifted from an overloaded transport mode to another mode with available capacity.
+
+The optimization framework therefore evaluates **Bus → Rail modal substitution**, subject to passenger shifting constraints and available rail capacity.
+
+### Modal Shift Scenarios
+
+| Maximum Modal Shift | Passengers Shifted | Unmet Demand | Coverage | Operating Cost |
+|---|---:|---:|---:|---:|
+| **0%** | 0 | 32,881 | 78.20% | 1,200 |
+| **10%** | 2,395 | 30,864 | **79.54%** | 1,200 |
+| **20%** | 2,395 | 30,864 | **79.54%** | 1,200 |
+| **30%** | 2,395 | 30,864 | **79.54%** | 1,200 |
+| **40%** | 2,395 | 30,864 | **79.54%** | 1,200 |
+
+### Key Findings
+
+Allowing just **10% modal substitution**:
+
+- Shifted **2,395 passengers** from bus to rail
+- Reduced unmet demand by approximately **2,017 passengers**
+- Improved network coverage from **78.20% to 79.54%**
+- Required **no additional operating cost**
+
+Increasing the allowed modal shift beyond **10% produced no further improvement**, indicating that the network had already exhausted the available opportunities for beneficial passenger redistribution.
+
+### Corridor-Level Modal Shifts
+
+The largest passenger shifts occurred on:
+
+- **Midnapore → Uluberia:** 1,154 passengers shifted
+- **Uluberia → Howrah:** 1,241 passengers shifted
+
+### Decision Insight
+
+> **Modal substitution provides a low-cost resilience mechanism by redistributing passengers toward available capacity before investing in additional transportation resources.**
+
+However, the results also show an important limitation:
+
+> **Modal substitution alone cannot solve a structural capacity shortage. Once available spare capacity is exhausted, additional fleet expansion becomes necessary.**
