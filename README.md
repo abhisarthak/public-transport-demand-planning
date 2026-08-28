@@ -181,3 +181,40 @@ The forecasted demand is subsequently used to:
 
 > **Decision Insight:** The forecasting model transforms historical passenger patterns into an actionable estimate of future transportation demand, providing the foundation for downstream optimization and resilience analysis.
 
+---
+
+## 🚍 Festival Capacity & Corridor Vulnerability Analysis
+
+Using the forecasted festival demand, the system evaluates whether the existing multimodal transportation network has sufficient capacity to serve passengers.
+
+### Network-Level Capacity Gap
+
+| Metric | Value |
+|---|---:|
+| **Festival Passenger Demand** | **150,864** |
+| **Current Multimodal Capacity** | **120,000** |
+| **Unmet Passenger Demand** | **30,864** |
+| **Current Network Coverage** | **79.54%** |
+
+The baseline analysis shows that the existing transportation network cannot fully absorb the projected festival demand, leaving more than **30,000 passengers unserved**.
+
+### Corridor-Level Performance
+
+| Corridor | Festival Demand | Unmet Demand | Coverage |
+|---|---:|---:|---:|
+| Howrah → Kolkata | 37,986 | **11,986** | **68.46%** |
+| Midnapore → Uluberia | 36,963 | **10,963** | **70.35%** |
+| Uluberia → Howrah | 38,555 | 7,655 | 80.15% |
+| Kharagpur → Midnapore | 37,360 | 260 | **99.30%** |
+
+### Critical Corridor Identification
+
+The analysis identifies **Howrah → Kolkata** as the most vulnerable corridor.
+
+- **11,986 passengers remain unserved**
+- Only **68.46% service coverage**
+- Accounts for approximately **38.84% of total network unmet demand**
+
+This demonstrates why uniform fleet expansion is inefficient. Additional transportation capacity should instead be **targeted toward the corridors experiencing the highest passenger shortages**.
+
+> **Decision Insight:** Corridor-level analysis converts a network-wide capacity shortage into a prioritized intervention strategy, identifying where additional buses and rail capacity can generate the greatest service improvement.
