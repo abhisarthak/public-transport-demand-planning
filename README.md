@@ -392,3 +392,79 @@ Rail disruptions have a significantly larger impact on network performance becau
 - Rail availability is therefore identified as the **dominant resilience factor** in the multimodal network
 
 > **Resilience Insight:** The network is considerably more sensitive to rail disruptions than bus disruptions. This suggests that protecting rail operations and maintaining contingency rail capacity should be a strategic priority during extreme demand events.
+
+---
+
+## 🎲 Monte Carlo Risk Simulation
+
+Deterministic optimization provides a solution for a specific demand and disruption scenario. However, real transportation systems operate under uncertainty.
+
+To evaluate network performance under uncertain conditions, the framework performs a **Monte Carlo simulation with 5,000 iterations**.
+
+### Simulation Inputs
+
+| Parameter | Configuration |
+|---|---:|
+| **Number of Simulations** | **5,000** |
+| Demand Uncertainty | **±10%** |
+| Bus Disruption Levels | 0%, 10%, 20%, 30% |
+| Rail Disruption Levels | 0%, 10%, 20%, 30% |
+
+The disruption scenarios were sampled using the following probability distribution:
+
+| Disruption Level | Probability |
+|---|---:|
+| 0% | 60% |
+| 10% | 20% |
+| 20% | 12% |
+| 30% | 8% |
+
+Each simulation generates a different combination of:
+
+- Passenger demand uncertainty
+- Bus service disruption
+- Rail service disruption
+- Available transportation capacity
+- Modal substitution opportunities
+- Resulting unmet passenger demand
+
+---
+
+### Monte Carlo Performance Summary
+
+| Metric | Mean | Minimum | Maximum |
+|---|---:|---:|---:|
+| **Forecast Demand** | 150,836 | 140,557 | 161,493 |
+| **Network Capacity** | 111,901 | 84,000 | 120,000 |
+| **Unmet Demand** | 39,051 | 24,077 | 72,761 |
+| **Network Coverage** | **74.14%** | **53.59%** | **83.16%** |
+| **Operating Cost** | 1,118.88 | 840 | 1,200 |
+
+---
+
+### Risk Indicators
+
+| Risk Metric | Result |
+|---|---:|
+| **Mean Coverage** | **74.14%** |
+| **Median Coverage** | **76.68%** |
+| **5th Percentile Coverage** | **59.42%** |
+| **Probability of Coverage < 70%** | **22.72%** |
+| **Probability of Coverage < 75%** | **41.24%** |
+| **Probability of Unmet Demand > 30,000** | **83.42%** |
+| **Worst Simulated Coverage** | **53.59%** |
+| **Worst Simulated Unmet Demand** | **72,761 passengers** |
+
+### Key Findings
+
+The Monte Carlo analysis shows that the network's deterministic performance can significantly overestimate real-world service reliability.
+
+Although the baseline festival scenario achieves approximately **79.54% coverage**, the average coverage under demand uncertainty and disruption falls to only **74.14%**.
+
+In the worst simulated scenario:
+
+- Network coverage falls to **53.59%**
+- More than **72,000 passengers remain unserved**
+- Available capacity drops to **84,000 passengers**
+
+> **Risk Insight:** Planning based only on average demand and deterministic capacity can underestimate operational risk. The Monte Carlo framework quantifies the probability of poor network performance and helps decision-makers prepare for low-probability, high-impact disruption scenarios.
