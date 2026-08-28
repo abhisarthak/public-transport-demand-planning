@@ -143,3 +143,41 @@ The system evaluates transportation decisions under multiple operating condition
 
 > **Note:** The project uses a scenario-based transportation dataset designed to evaluate the complete Decision Intelligence pipeline, including forecasting, optimization, resilience testing, and risk analysis.
 
+
+---
+
+## 🤖 Demand Forecasting & Machine Learning
+
+The first stage of the Decision Intelligence pipeline forecasts passenger demand before capacity decisions are made.
+
+A **Random Forest Regressor** was developed and evaluated against a **Naïve Baseline model** to determine whether machine learning could provide a meaningful improvement in forecasting accuracy.
+
+### Model Performance
+
+| Model | MAE | R² |
+|---|---:|---:|
+| Naïve Baseline | 1,942 | 0.263 |
+| Random Forest | 772 | **0.935** |
+
+### Performance Improvement
+
+Compared with the naïve baseline, the Random Forest model achieved:
+
+- **60.26% reduction in Mean Absolute Error (MAE)**
+- **70.32% reduction in RMSE**
+- **R² improvement from 0.263 to 0.935**
+
+### Why Forecasting Matters
+
+Accurate demand forecasting is critical because transportation capacity decisions must be made **before passenger demand materializes**.
+
+The forecasted demand is subsequently used to:
+
+1. Estimate festival-period passenger demand
+2. Calculate capacity shortages and unmet demand
+3. Identify vulnerable transportation corridors
+4. Determine additional bus and rail capacity requirements
+5. Evaluate network resilience under disruption scenarios
+
+> **Decision Insight:** The forecasting model transforms historical passenger patterns into an actionable estimate of future transportation demand, providing the foundation for downstream optimization and resilience analysis.
+
